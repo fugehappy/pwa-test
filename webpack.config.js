@@ -3,6 +3,9 @@ const { configureWebpack, graphQL } = require('@magento/pwa-buildpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 
+const moduleOverridePlugin = require('./src/override/moduleOverrideWebpackPlugin')
+const componentOverrideMapping = require('./src/override/componentOverrideMapping')
+
 const {
     getMediaURL,
     getStoreConfigData,
@@ -98,7 +101,8 @@ module.exports = async (env) => {
                 collapseWhitespace: true,
                 removeComments: true
             }
-        })
+        }),
+        new moduleOverridePlugin(componentOverrideMapping)
     ]
 
     // config.module.rules.push({
