@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@talons/*": ["src/talons/*"],
+      "@components/*": ["src/components/*"],
+      "@images/*": ["src/images/public/*"],
+      "@svgs/*": ["src/public/svgs/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
