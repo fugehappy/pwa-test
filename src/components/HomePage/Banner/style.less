@@ -1,0 +1,192 @@
+:global {
+  @import "./slick.less";
+
+  a {
+    color: currentColor;
+  }
+
+  .tnt-home-slider {
+    position: relative;
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      display: none !important;
+      z-index: 2;
+    }
+  }
+
+  .tnt-carousel:hover,
+  .tnt-aside-slider:hover {
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      display: block !important;
+      z-index: 2;
+    }
+  }
+
+  .tnt-carousel {
+    position: relative;
+    margin: 0 auto;
+
+    .slick-slide {
+      height: 400px;
+
+      img {
+        height: 400px;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .slick-list {
+      z-index: 1;
+    }
+
+    .slick-prev {
+      left: calc(~"10% + 200px");
+
+      @media (max-width: 1860px) {
+        left: 230px;
+      }
+    }
+
+    .slick-next {
+      right: 320px;
+    }
+
+    .pager {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+
+      ul {
+        display: flex;
+      }
+
+      li {
+        margin-right: 5px;
+        cursor: pointer;
+        background: #fff;
+        opacity: 0.9;
+      }
+
+      button {
+        display: block;
+        width: 136px;
+        padding: 6px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        background: none;
+      }
+
+      .active {
+        background-color: #007852;
+        color: #fff;
+
+        button {
+          color: #fff;
+        }
+      }
+    }
+
+    .pager-wrapper {
+      width: 700px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .justify-content-center {
+      display: flex;
+    }
+  }
+
+  .tnt-aside-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 305px;
+    height: 400px;
+    border-left: 5px solid #fff;
+    overflow: hidden;
+
+    .slick-prev,
+    .slick-next {
+      width: 60px;
+      height: 60px;
+    }
+
+    .slick-prev {
+      left: 10px;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
+    .slick-dots-bottom {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .slick-dots {
+      li {
+        display: inline-block;
+      }
+
+      button {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin: 0 4px;
+        border-radius: 6px;
+        background-color: #444;
+        opacity: .6;
+        font-size: 0;
+        cursor: pointer;
+      }
+
+      .slick-active {
+        button {
+          background-color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .aside-slider {
+    width: 300px;
+  }
+
+  .backTop {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1100px;
+  margin: auto;
+  transform: translate(-50%, -50%);
+}

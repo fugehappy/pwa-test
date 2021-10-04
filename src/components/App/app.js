@@ -8,13 +8,13 @@ import { useApp } from '@magento/peregrine/lib/talons/App/useApp'
 import { HeadProvider, StoreTitle } from '@magento/venia-ui/lib/components/Head'
 import Main from '@magento/venia-ui/lib/components/Main'
 import Mask from '@magento/venia-ui/lib/components/Mask'
-// import Routes from '@magento/venia-ui/lib/components/Routes'
-import Routes from '../Routes'
+import Routes from '@magento/venia-ui/lib/components/Routes'
+// import Routes from '../Routes'
 import ToastContainer from '@magento/venia-ui/lib/components/ToastContainer'
 // import Service from '@components/Service'
-// import Icon from '../Icon'
-// import globalCSS from '../../index.css'
-// import './app.less'
+import Icon from '../Icon'
+import globalCSS from './index.css'
+import './app.less'
 
 import {
     AlertCircle as AlertCircleIcon,
@@ -111,7 +111,7 @@ const App = (props) => {
             <Main isMasked={hasOverlay}>
                 <Routes />
             </Main>
-            <Service />
+            {/* <Service /> */}
             <Mask isActive={hasOverlay} dismiss={handleCloseDrawer} />
             <Suspense fallback={null}>
                 <Navigation />
@@ -129,6 +129,6 @@ App.propTypes = {
     unhandledErrors: array
 }
 
-// App.globalCSS = globalCSS
+App.globalCSS = globalCSS
 
 export default App

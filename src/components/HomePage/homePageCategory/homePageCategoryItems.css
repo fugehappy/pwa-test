@@ -1,0 +1,86 @@
+.titleContent {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 60px 0 65px;
+    font-size: var(--venia-global-fontSize-1000);
+    font-weight: var(--venia-global-fontWeight-bold);
+    color: rgb(var(--venia-global-color-gray-50));
+    border-radius: 39px 39px 0 0;
+    box-sizing: border-box;
+}
+
+.titleContent span {
+    text-transform: uppercase;
+}
+
+.shopAll {
+    float: right;
+    line-height: 56px;
+    font-size: var(--venia-global-fontSize-400);
+    text-decoration: underline;
+}
+
+:global(.snacks) .titleContent {
+    background-color: #b26000;
+}
+
+:global(.fruits) .titleContent {
+    background-color: #008222;
+}
+
+:global(.meat) .titleContent {
+    background-color: #cc4000;
+}
+
+:global(.seafood) .titleContent {
+    background-color: #003c70;
+}
+
+:global(.dairy) .titleContent {
+    background-color: #008485;
+}
+
+:global(.bakery,.kitchen) .titleContent {
+    background-color: #007852;
+}
+
+:global(.essentials) .titleContent {
+    background-color: #837373;
+}
+
+:global(.beauty) .titleContent {
+    background-color: #c42266;
+}
+
+.subCat {
+    padding: 15px 65px 0 65px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.subCat li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px 10px;
+    color: rgb(var(--tnt-global-color-black));
+    background-color: #f3f3f3;
+    border-radius: 20px;
+}
+
+.sliderProducts {
+    position: relative;
+    margin: auto;
+    padding: 10px 60px 20px;
+    background-color: rgb(var(--venia-global-color-gray-50));
+    box-sizing: border-box;
+}
+
+.sliderProducts :global(.slick-slider) {
+    position: relative;
+    display: block;
+    min-height: inherit;
+    margin: 0;
+    padding: 0;
+}

@@ -6,6 +6,8 @@ import HomePage from '@magento/venia-ui/lib/components/HomePage'
 import MagentoRoute from '@magento/venia-ui/lib/components/MagentoRoute'
 import { useScrollTopOnChange } from '@magento/peregrine/lib/hooks/useScrollTopOnChange'
 
+// import HomePage from '@components/HomePage'
+
 const Routes = () => {
     const { pathname } = useLocation()
     useScrollTopOnChange(pathname)
