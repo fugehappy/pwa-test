@@ -1,5 +1,5 @@
-import Banner from './Banner'
-import Eflyer from './Eflyer'
+// import Banner from './Banner'
+// import Eflyer from './Eflyer'
 // import WeeklySpecial from './WeeklySpecial'
 // import HomePageCategory from './homePageCategory'
 import globalCSS from './homePage.css'
@@ -9,8 +9,9 @@ import globalCSS from './homePage.css'
 const HomePage = () => {
     return (
         <>
-            <Banner />
-            <Eflyer />
+            test
+            {/* <Banner /> */}
+            {/* <Eflyer /> */}
             {/* <WeeklySpecial /> */}
             {/* <HomePageCategory /> */}
         </>
